@@ -1,4 +1,27 @@
+<div id="top">
+
+<!-- HEADER STYLE: CLASSIC -->
+<div align="middle">
+
+
 # EntroPass
+
+<em>Password Strength Checker</em>
+
+<!-- BADGES -->
+<img src="https://img.shields.io/github/last-commit/OSInternals/EntroPass?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+<img src="https://img.shields.io/github/languages/top/OSInternals/EntroPass?style=flat&color=0080ff" alt="repo-top-language">
+<img src="https://img.shields.io/github/languages/count/OSInternals/EntroPass?style=flat&color=0080ff" alt="repo-language-count">
+
+<em>Built with the tools and technologies:</em>
+
+<img src="https://img.shields.io/badge/Markdown-000000.svg?style=flat&logo=Markdown&logoColor=white" alt="Markdown">
+<img src="https://img.shields.io/badge/C-A8B9CC.svg?style=flat&logo=C&logoColor=black" alt="C">
+
+</div>
+<br>
+
+---
 
 EntroPass is a command-line tool written in C that evaluates password strength based on entropy and estimates the time required to crack the password using brute-force methods across different computational platforms (CPU, GPU, and quantum computing). It analyzes the character sets used in a password and provides a detailed report on its complexity and security.
 
