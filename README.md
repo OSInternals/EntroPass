@@ -13,7 +13,7 @@
 <img src="https://img.shields.io/github/languages/top/OSInternals/EntroPass?style=flat&color=0080ff" alt="repo-top-language">
 <img src="https://img.shields.io/github/languages/count/OSInternals/EntroPass?style=flat&color=0080ff" alt="repo-language-count">
 
-<em>Built with the tools and technologies:</em>
+<em>Built with C</em>
 
 <img src="https://img.shields.io/badge/Markdown-000000.svg?style=flat&logo=Markdown&logoColor=white" alt="Markdown">
 <img src="https://img.shields.io/badge/C-A8B9CC.svg?style=flat&logo=C&logoColor=black" alt="C">
