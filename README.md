@@ -12,8 +12,8 @@ EntroPass is a command-line tool written in C that evaluates password strength b
 ## Installation
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/entropass.git
-   cd entropass
+   git clone https://github.com/OSInternals/EntroPass.git
+   cd EntroPass
    ```
 2. **Compile the Code**:
    Ensure you have a C compiler (e.g., `gcc`) installed.
