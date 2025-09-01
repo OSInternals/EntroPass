@@ -163,7 +163,7 @@ int main(int argc, char *argv[])
     return 0;
 }
 
-
+// Time duration analysis based on seconds.
 void print_time(double seconds) 
 {
     if (seconds < 60) 
