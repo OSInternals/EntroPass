@@ -1,6 +1,8 @@
 <div id="top">
 
 <!-- HEADER STYLE: CLASSIC -->
+<div align="middle">
+
 <p align="center">
   <img src="EntroPass.png" width="900" height="680">
 </p>
