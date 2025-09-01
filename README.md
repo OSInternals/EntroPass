@@ -126,6 +126,7 @@ gcc -o entropass entropass.c -lm
 - **Quantum Estimation**: Simplified model based on Grover's algorithm; actual quantum cracking capabilities depend on hardware and algorithms not fully modeled here.
 - **No Dictionary Attack Consideration**: The tool assumes brute-force attacks and does not account for dictionary or hybrid attacks.
 - **Single Password Input**: Only one password can be analyzed per execution.
+- **Character Limitation**: 36 Chracters are allowed as password.
 
 ## Contributing
 Contributions are welcome! To contribute:
