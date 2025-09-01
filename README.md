@@ -1,10 +1,9 @@
 <div id="top">
 
 <!-- HEADER STYLE: CLASSIC -->
-<div align="middle">
-
-
-# EntroPass
+<p align="center">
+  <img src="EntroPass.png" width="900" height="680">
+</p>
 
 <em>Password Strength Checker</em>
 
