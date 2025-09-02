@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
@@ -35,6 +36,7 @@ int main(int argc, char *argv[])
     int has_uppercase = 0;
     int has_digit = 0;
     int has_symbol = 0;
+    bool is_secure = true;
 
     // Input and initial checks
     printf("Password Checking Intialized\n");
@@ -97,7 +99,7 @@ int main(int argc, char *argv[])
     entropy = length * log2(charset_size);
 
     // Output results
-    printf("\n--- Password Analysis ---\n");
+    printf("\n--- Password Analysis ---\n\n");
     printf("Password: %s\n", password);
     printf("Length: %d characters\n", length);
     printf("Character Sets Used: ");
@@ -147,7 +149,7 @@ int main(int argc, char *argv[])
     // Time to Crack Calculation
     double total_possibilities = pow((double)charset_size, (double)length);
 
-    printf("\n--- Estimated Time to Crack (Brute-Force) ---\n");
+    printf("\n--- Estimated Time to Crack (Brute-Force) ---\n\n");
     printf("Total Possibilities: %.0f\n", total_possibilities);
     
     printf("Time to Crack (Traditional CPU): ");
@@ -160,6 +162,39 @@ int main(int argc, char *argv[])
     print_time(sqrt(total_possibilities) / QUANTUM_OPERATIONS_PER_SECOND);
     printf("\n");
 
+    // Password improvement suggestions based on the user given input.
+    printf("\n--- Password Improvement Suggestions ---\n\n");
+    if (length < 12) 
+    {
+        printf("Increase password length to at least 12 characters.\n");
+        is_secure = false;
+    }
+    if (!has_lowercase) 
+    {
+        printf("Add lowercase letters to increase complexity.\n");
+        is_secure = false;
+    }
+    if (!has_uppercase) 
+    {
+        printf("Add uppercase letters to increase complexity.\n");
+        is_secure = false;
+    }
+    if (!has_digit) 
+    {
+        printf("Add digits to increase complexity.\n");
+        is_secure = false;
+    }
+    if (!has_symbol) 
+    {
+        printf("Add special symbols to increase complexity.\n");
+        is_secure = false;
+    }
+
+    if(is_secure)
+    {
+        printf("Password is Secure\n")
+    }
+    
     return 0;
 }
 
