@@ -31,7 +31,7 @@ EntroPass is a command-line tool written in C that evaluates password strength b
 - **Character Set Analysis**: Identifies the use of lowercase letters, uppercase letters, digits, and special symbols.
 - **Strength Rating**: Categorizes password strength as Very Weak, Weak, Good, Strong, or Excellent based on entropy.
 - **Crack Time Estimation**: Estimates brute-force cracking time for traditional CPUs, modern GPUs, and theoretical quantum computers (using Grover's algorithm for quantum estimation).
-- **User-Friendly Output**: Provides a detailed analysis of the password, including length, character sets used, entropy, and estimated cracking times.
+- **User-Friendly Output**: Provides a detailed analysis of the password, including length, character sets used, entropy, estimated cracking times, and password improvement suggestions.
 
 ## Installation
 1. **Clone the Repository**:
@@ -59,9 +59,10 @@ Run EntroPass by providing a password as a command-line argument:
 
 ### Example Output
 ```plaintext
-Password Checking Initialized
+Password Checking Intialized
 
 --- Password Analysis ---
+
 Password: MyP@ssw0rd
 Length: 10 characters
 Character Sets Used: Lowercase letters are used.
@@ -69,14 +70,20 @@ Character Sets Used: Lowercase letters are used.
                      Numerical Digits are used
                      Special Symbols are used
 Character Pool Size (R): 94
-Entropy (E): 65.74 bits
+Entropy (E): 65.55 bits
         Strength Rating: Good
 
 --- Estimated Time to Crack (Brute-Force) ---
-Total Possibilities: 57262297369379584
-Time to Crack (Traditional CPU): 1816.88 years
-Time to Crack (Modern GPU): 18.17 years
-Time to Crack (Quantum Capability according to Grover's Algorithm): 0.00 seconds
+
+Total Possibilities: 53861511409489969000
+Time to Crack (Traditional CPU): 1707.94 years
+Time to Crack (Modern GPU): 17.08 years
+Time to Crack (Quantom Capability according to Grovers Algorithm): 0.01 seconds
+
+
+--- Password Improvement Suggestions ---
+
+Increase password length to at least 12 characters.
 ```
 
 ## How It Works
